@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2570687952">
+    <data-source source="LOCAL" name="Rails keystone: development" uuid="28748f00-c685-4223-9110-05131531659c">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:tranquil_falls_2379_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails keystone: test" uuid="afc83072-2bc8-478b-80fa-7e7b5231833e">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:tranquil_falls_2379_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails keystone: production" uuid="8286f1b3-c407-4d28-b763-55d774daa946">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:tranquil_falls_2379_production</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
