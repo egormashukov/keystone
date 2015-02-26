@@ -1,0 +1,12 @@
+- if @reviews.present?
+  %h2= t(:feedbacks)
+  - @reviews.each_with_index do |r,i|
+    - unless i == 0
+      %hr
+    .clearfix= r.msg
+    .clearfix
+      %b= r.print_user
+    - if current_user_admin?
+      .clearfix
+        = link_to t(:edit, model: t(:review)), edit_review_path(r), class: 'btn btn-info'
+        = link_to t(:destroy, model: t(:review)), review_path(r), method: :delete, data: { confirm: t('confirm.delete') }, class: 'btn btn-danger'

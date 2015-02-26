@@ -1,0 +1,10 @@
+= form_for resource do |f|
+  = f.hidden_field :category_id, value: params[:category]
+  .row
+    .col-lg-2= f.label :title
+    .col-lg-3= f.text_field :title
+  .row
+    .col-lg-2= f.label :description
+    .col-lg-3= f.text_area :description, cols: 60, rows: 4, placeholder: t(:type_in_textarea)
+  .row
+    = f.submit t(:save, model: t(:product)), {class: 'btn btn-primary'}

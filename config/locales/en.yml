@@ -1,0 +1,26 @@
+en:
+  all_categories: 'All'
+  site_name: 'KeystoneTest'
+  feedbacks: 'Feedbacks'
+  save: ! 'Save %{model}'
+  new: ! 'New %{model}'
+  edit: ! 'Edit %{model}'
+  destroy: ! 'Destroy %{model}'
+  sign_out: 'Sign out'
+  leave_feedback: 'Leave your feedback for this product'
+  type_in_textarea: 'Message'
+  product: 'product'
+  review: 'review'
+  user: 'user'
+  category: 'category'
+  activerecord:
+    attributes:
+      review:
+        msg: 'Message'
+      category:
+        name: 'Name'
+      product:
+        title: 'Title'
+        description: 'Description'
+  confirm:
+    delete: 'Are you sure you want to delete item?'

@@ -1,0 +1,15 @@
+%h2= "Product ##{resource.id}"
+.clearfix
+  .col-lg-2
+    %b= Product.human_attribute_name('title')
+  .col-lg-3= resource.title
+.clearfix
+  .col-lg-2
+    %b= Product.human_attribute_name('Description')
+  .col-lg-3= resource.description
+%hr
+- if user_signed_in?
+  %h2= t(:leave_feedback)
+  = render 'reviews/form'
+
+= render 'reviews/list'

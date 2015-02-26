@@ -1,0 +1,5 @@
+= form_for resource do |f|
+  = f.label :name
+  = f.text_field :name
+  .clearfix
+    = f.submit t(:save, model: t(:category)), {class: 'btn btn-primary'}

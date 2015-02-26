@@ -1,0 +1,4 @@
+.list-group
+  = link_to t(:all_categories), categories_path, class: "list-group-item #{'active' if params[:id].nil? && params[:category].blank?}"
+  - @categories.each do |c|
+    = link_to c.name, category_path(c), class: "list-group-item #{'active' if c.is_active_category?(params)}"
